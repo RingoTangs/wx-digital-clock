@@ -1,0 +1,15 @@
+{
+  "miniprogramRoot": "./digital-clock",
+  "projectname": "digital-clock-app",
+  "description": "digital clock app",
+  "appid": "wxc2535e1a4557a70e",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "enhance": false,
+    "compileHotReLoad": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
