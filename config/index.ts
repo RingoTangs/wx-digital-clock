@@ -38,6 +38,16 @@ export default defineConfig<'vite'>(async (merge) => {
             generateScopedName: '[name]__[local]___[hash:base64:5]',
           },
         },
+        autoprefixer: {
+          enable: true,
+        },
+        url: {
+          enable: true,
+          config: {
+            url: 'inline',
+            maxSize: 1024 * 50, // 50KB
+          },
+        },
       },
     },
     h5: {
