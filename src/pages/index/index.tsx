@@ -8,8 +8,8 @@ export default function Index() {
   })
 
   return (
-    <View className="index">
-      <Text>Hello world!</Text>
+    <View className="container">
+      <Text className="time-txt">09:00:00</Text>
     </View>
   )
 }

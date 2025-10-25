@@ -1,0 +1,16 @@
+.container {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.time-txt {
+  font-size: 100px;
+  color: #17d4fe;
+  font-family: 'Orbitron';
+  font-weight: bold;
+  letter-spacing: 10px;
+}
