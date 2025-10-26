@@ -3,5 +3,5 @@ interface FontsConfig {
 }
 
 export const fontsConfig: FontsConfig = {
-  Orbitron: { fontSize: '110px', width: '1em' },
+  Orbitron: { fontSize: '100px', width: '1em' },
 }
