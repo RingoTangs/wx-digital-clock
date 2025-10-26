@@ -8,23 +8,15 @@
   justify-content: center;
   color: white;
 }
-.inner-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.inner_container {
+  width: 100%;
 }
-.time-txt {
-  font-size: 120px;
-  color: #17d4fe;
-  font-family: 'RobotoMono', monospace;
-  font-weight: 700;
-  letter-spacing: 10px;
-}
-.date-text {
+.datetext {
   padding-top: 10px;
   color: #b2b2b2;
   font-family: 'Inter';
   font-size: 20px;
   font-weight: 400;
+  display: block;
+  text-align: center;
 }

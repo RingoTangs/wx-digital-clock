@@ -1,10 +1,11 @@
-import { View, Text } from '@tarojs/components'
+import { Text, View } from '@tarojs/components'
 import { useReady } from '@tarojs/taro'
 import dayjs from 'dayjs'
 import { useState } from 'react'
 import { useNow } from './useNow'
 import { useKeepScreenOn } from './useKeepScreenOn'
-import './index.scss'
+import { TimeFormat } from './TimeFormat'
+import styles from './index.module.scss'
 
 export default function Index() {
   const [navBarHeight, setNavBarHeight] = useState<number>(0)
@@ -17,14 +18,17 @@ export default function Index() {
   useKeepScreenOn()
 
   const now = useNow()
-  const timestring = dayjs(now).format('HH:mm:ss')
+  // const timestring = dayjs(now).format('HH:mm:ss')
   const datestr = dayjs().format('ddd DD MMM').toUpperCase()
 
   return (
-    <View className="container">
-      <View className="inner-container" style={{ marginTop: -navBarHeight }}>
-        <Text className="time-txt">{timestring}</Text>
-        <Text className="date-text">{datestr}</Text>
+    <View className={styles.container}>
+      <View
+        className={styles.inner_container}
+        style={{ marginTop: -navBarHeight }}
+      >
+        <TimeFormat date={now} />
+        <Text className={styles.datetext}>{datestr}</Text>
       </View>
     </View>
   )

@@ -1,0 +1,12 @@
+.timeformat {
+  color: #17d4fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Orbitron', monospace;
+  font-weight: 700;
+  .digital {
+    // border: 1px solid red;
+    text-align: center;
+  }
+}
